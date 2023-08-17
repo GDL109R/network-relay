@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!-- generic html -->
+<html lang="en">
+    <head>
+        <!-- Page setup -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Network Relay</title>
+        
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+
+    <body>
+        <!-- Basic GUI components -->
+        <h1 style="font-family: monospace;">Network Relay</h1>
+        <button onclick="start()">
+            On
+        </button>
+        <button onclick="stop()">
+            Off
+        </button>
+
+    </body>
+
+    <!-- JS to take input and push php code to send local packet -->
+    <script>
+        function start() {
+            $.ajax({
+                type: "POST",
+                url: "main.php",
+                data: "phpFunction=start",
+                success: function(msg){ 
+                    console.log(msg);
+                },
+                error: function(msg){ 
+                    console.log(msg);
+                }
+            });
+        }
+
+        function stop() {
+            $.ajax({
+                type: "POST",
+                url: "main.php",
+                data: "phpFunction=stop",
+                success: function(msg){ 
+                    console.log(msg);
+                },
+                error: function(msg){ 
+                    console.log(msg);
+                }
+            });
+        }
+    </script>
+</html>
