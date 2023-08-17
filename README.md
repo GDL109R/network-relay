@@ -6,6 +6,11 @@ The physical circuit uses few components, with a transistor allowing the ESP32 t
 The ESP32 is programmed to connect to WLAN then listen and respond appropriately to recieved packets. Testing using the Socket library on Python ensures functionality of the circuit, with similar code used for implementation with a web server.
 
 A web server handles the sending of packets from user inputs on a website using a combination of HTML and PHP. This allows control from any device with a web browser. If port-forwarded, this switch could be controlled by anyone on the internet.
+
+
+https://github.com/GDL109R/network-relay/assets/96452665/7dfcfbe8-c5ca-4c9d-a12d-d973a1d41980
+
+
 ## The Circuit
 ![download](https://github.com/GDL109R/network-relay/assets/96452665/e40fa385-410a-4828-8ef0-3eb1f87ec540)
 ![download](https://github.com/GDL109R/network-relay/assets/96452665/4b788834-1104-4ad0-a47d-432a5b75dee4)
